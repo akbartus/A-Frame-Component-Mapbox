@@ -142,7 +142,7 @@ AFRAME.registerComponent("mapbox-component", {
     token: {
       type: "string",
       default:
-        "pk.eyJ1IjoiZGFudmsiLCJhIjoiY2lrZzJvNDR0MDBhNXR4a2xqNnlsbWx3ciJ9.myJhweYd_hrXClbKk8XLgQ",
+        "",
     },
     style: { type: "string", default: "mapbox://styles/mapbox/streets-v12" },
     center: { type: "array", default: [69.2787079, 41.3123363] },
