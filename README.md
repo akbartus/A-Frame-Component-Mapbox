@@ -42,34 +42,26 @@ In order to use the component attach "mapbox-component" to a-plane primitive. Th
 
 The code below shows the sample implementation of the component:
 ```
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A-Frame Component: Three-geo (Updated)</title>
+    <meta charset='utf-8' />
+    <title>A-Frame Component: Mapbox</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
-    <script src="js/three-geo-component.js">
+    <script src="js/mapbox-component.js">
     </script>
 </head>
 <body>
-    <a-scene>
-        <a-entity id="first" three-geo="token: your-mapbox-token-here;
-                   lat: 36.2058;
-                   lng:  -112.4413;
-                   radius: 5;
-                   zoom: 13;
-                   axesHelper: false;
-                   flatMap: false;
-                   mapStyle: elevated;
-                   wireframeColor: #ffffff;
-                   " rotation="-90 180 0" position="0 0.7 -1.5" scale="2 2 2"></a-entity>
-                   <a-sky color="#000000"></a-sky>
+     <a-scene>
+        <a-plane mapbox-component position="0 0 -3" rotation="0 0 0" width="8" height="5"
+            color="#ddd"></a-plane>       
+        <a-camera position="0 0 0" cursor="rayOrigin: mouse;" raycaster="objects: .clickable"></a-camera>
+        <a-sky color="#ECECEC"></a-sky>
     </a-scene>
 </body>
 </html>
 ```
-To learn more about "Three-geo" library, check the repository page of it.
+Please note that a-camera primitive is used with raycast and rayorigin to enable click events. Without them navigation buttons will not work! 
 
 ### **Tech Stack**
 The project is powered by AFrame and Three.js.
