@@ -10,15 +10,35 @@ This is A-Frame component for Mapbox, which offer some additional features for 3
 
 ### **Instructions**
 In order to use the component attach "mapbox-component" to a-plane primitive. The component has the following attributes: 
-token: { type: "string", default: ""},
-    style: { type: "string", default: "mapbox://styles/mapbox/streets-v12" },
-    center: { type: "array", default: [69.2787079, 41.3123363] },
-    zoom: { type: "int", default: 15 },
-    pitch: { type: "int", default: 0 },
-    deltaDistance: { type: "int", default: 100 }, // Distance to move vertically
-    deltaDegrees: { type: "int", default: 25 }, // rotation degrees
-    language: { type: "string", default: "en" }, // zh-Hans / ar / fr / vi / es / pt / ko / ja / it / de / ru / en
-    attach: { type: "boolean", default: false },
+* <b>token: { type: "string", default: ""}</b> - Mapbox token
+* <b>style: { type: "string", default: "mapbox://styles/mapbox/streets-v12" }</b> - Mapbox map style. Has the following styles:
+  - mapbox://styles/mapbox/streets-v12 (Mapbox Streets);
+  - mapbox://styles/mapbox/outdoors-v12 (Mapbox Outdoors);
+  - mapbox://styles/mapbox/light-v11 (Mapbox Light);
+  - mapbox://styles/mapbox/dark-v11 (Mapbox Dark);
+  - mapbox://styles/mapbox/satellite-v9 (Mapbox Satellite);
+  - mapbox://styles/mapbox/satellite-streets-v12 (Mapbox Satellite Streets);
+  - mapbox://styles/mapbox/navigation-day-v1 (Mapbox Navigation Day);
+  - mapbox://styles/mapbox/navigation-night-v1 (Mapbox Navigation Night)
+* <b>center: { type: "array", default: [69.2787079, 41.3123363] }</b> - Center coordinates on the map, lat and lng.
+* <b>zoom: { type: "int", default: 15 }</b> - Zoom level. The higher zoom level is, the more detailed is the view.
+* <b>pitch: { type: "int", default: 0 }</b> - Camera pitch.
+* <b>deltaDistance: { type: "int", default: 100 }</b> - Distance for moving up or down on the map.
+* <b>deltaDegrees: { type: "int", default: 25 }</b> - Degrees og rotation when left or right is clicked.
+* <b>language: { type: "string", default: "en" }</b> - Map language. Has the following languages: 
+  - "zh-Hans" (Chinese); 
+  - "ar" (Arabic); 
+  - "fr" (French);
+  - "vi" (Vietnamese);
+  - "es" (Spanish);
+  - "pt" (Portuguese);
+  - "ko" (Korean);
+  - "ja" (Japanese);
+  - "it" (Italian); 
+  - "de" (German); 
+  - "ru" (Russian); 
+  - "en" (English).
+* <b>attach: { type: "boolean", default: false }</b> - Whether navigation buttons should be attached to camera or should be freely stainding in 3D space.
 
 The code below shows the sample implementation of the component:
 ```
