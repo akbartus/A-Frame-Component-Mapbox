@@ -67,4 +67,4 @@ Please note that a-camera primitive is used with raycast and rayorigin to enable
 The project is powered by AFrame and Three.js.
 
 ### **Demo**
-See demo of the component here: [Demo](https://three-geo.glitch.me/)
+See demo of the component here: [Demo](mapbox-component.glitch.me/)
