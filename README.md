@@ -62,6 +62,7 @@ The code below shows the sample implementation of the component:
 </html>
 ```
 Please note that a-camera primitive is used with raycast and rayorigin to enable click events. Without them navigation buttons will not work! 
+If you want to use it in VR, just attach laser pointer with raycaster showing to .clickable class.
 
 ### **Tech Stack**
 The project is powered by AFrame and Three.js.
