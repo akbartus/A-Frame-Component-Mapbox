@@ -53,7 +53,7 @@ The code below shows the sample implementation of the component:
 </head>
 <body>
      <a-scene>
-        <a-plane mapbox-component position="0 0 -3" rotation="0 0 0" width="8" height="5"
+        <a-plane mapbox-component="attach: true" position="0 0 -3" rotation="0 0 0" width="8" height="5"
             color="#ddd"></a-plane>       
         <a-camera position="0 0 0" cursor="rayOrigin: mouse;" raycaster="objects: .clickable"></a-camera>
         <a-sky color="#ECECEC"></a-sky>
